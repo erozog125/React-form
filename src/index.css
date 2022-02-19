@@ -1,13 +1,101 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(90deg, #548288,#3e729c,#12678f,#0c9fda);  
+}
+
+.frm-register {
+  margin-top: 2rem;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #8dd4e0;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #75b5e9;
+  border: solid 1px #011520;  
+}
+
+.frm-register svg {
+  font-size: 1.5rem;
+  color: #08638d;
+}
+
+.frm-register input {
+  border: none;
+  background: transparent;
+}
+
+
+.frm-register h2 {
+  margin: 1rem 0 1rem 0;
+}
+
+.frm-register hr {
+  width: 90%;
+  height: 0.1rem;
+  border: none;
+  margin-top: 0;
+  background: linear-gradient(90deg, #032a2e,#094f8b,#0976a8,#11afee);  
+}
+
+.frm-register .data {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #75b5e9;
+  padding: 0.2rem;
+  border-radius: 15px;
+  border-bottom: solid #7089ac 2px ;
+}
+
+.frm-register .btn-form,
+.frm-register .btn-secundary {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: #0786db;
+  border: solid #3797f1 1px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.frm-register .btn-form:hover,
+.frm-register .btn-form:focus,
+.frm-register .btn-secundary:hover,
+.frm-register .btn-secundary:focus{
+  font-weight: 900;
+  background-color: #011520;
+}
+
+.frm-register a {
+  font-size: 0.8rem;
+  color: #ec4f4f;
+
+}
+
+.frm-register .btn-secundary {
+  background-color: #109426;
+}
+
+.frm-register .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
