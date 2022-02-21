@@ -1,9 +1,15 @@
-import { Form1 } from './Components/Form1/Form1';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { Home } from './Components/Pages/Home/Home';
+
 
 function App() {
   return (
     <div className="App">
-      <Form1 />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+        </Routes>
+      </BrowserRouter>      
     </div>
   );
 }
