@@ -3,6 +3,7 @@ import React,{useState} from 'react';
 import axios from 'axios';
 import { FaUserCircle } from 'react-icons/fa';
 import { RiLockPasswordFill } from 'react-icons/ri';
+import { NavLink } from 'react-router-dom';
 
 export const FormSession = () => {
   
@@ -38,7 +39,9 @@ export const FormSession = () => {
         <a href="#">Forgot your password!</a>
         <div className="buttons">                  
           <button onClick={handleLogin} className='btn-secundary'>Sign In</button>
+          <NavLink to="/register">
           <button className='btn-form'>Register</button>
+          </NavLink>
         </div>
       </form>    
   )
